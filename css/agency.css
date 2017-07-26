@@ -46,6 +46,12 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+blockquote::before {
+  content: '“';
+}
+blockquote::after {
+  content: '”';
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -381,7 +387,7 @@ section h3.section-subheading {
   position: absolute;
   content: "";
   width: 2px;
-  background-color: #f1f1f1;
+  background-color: #777777;
   left: 40px;
   margin-left: -1.5px;
 }
@@ -616,7 +622,7 @@ footer {
   text-align: center;
 }
 footer span.copyright {
-  line-height: 40px;
+  line-height: 1.2;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;

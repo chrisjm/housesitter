@@ -49,6 +49,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+blockquote::before {
+  content: '“';
+}
+
+blockquote::after {
+  content: '”';
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -337,7 +345,7 @@ section {
         position: absolute;
         content: "";
         width: 2px;
-        background-color: #f1f1f1;
+        background-color: @gray-light;
         left: 40px;
         margin-left: -1.5px;
     }
@@ -593,7 +601,7 @@ footer {
     padding: 25px 0;
     text-align: center;
     span.copyright {
-        line-height: 40px;
+        line-height: 1.2;
         .heading-font;
         text-transform: none;
     }
